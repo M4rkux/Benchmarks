@@ -22,3 +22,11 @@ From the root of the project you can run:
 ```
 docker-compose -f mongo.yml up -d
 ```
+
+---
+### Status
+- [x] NodeJs
+- [ ] Go
+- [ ] Python
+- [ ] PHP
+- [ ] Java
