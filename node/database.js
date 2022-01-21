@@ -10,6 +10,6 @@ mongoose.connect(`mongodb://${username}:${password}@${host}:${port}/${database}?
   {
     autoIndex: true,
   }
-)
+).catch(console.error)
 
 module.exports = mongoose
