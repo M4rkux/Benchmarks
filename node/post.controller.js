@@ -37,6 +37,8 @@ async function postRegisterSerial(req, res) {
   const postNumber = Number(req.params.post_number)
   const {serial} = req.body
   const valid = await _checkPreviousPosts(serial, postNumber)
+
+  console.log({postNumber, serial, valid})
   if (!_checkSerial(serial)) return res.status(500).send(`Serial ${serial} is invalid`)
 
   try {
